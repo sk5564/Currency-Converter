@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body bgcolor="grey">
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <hr>
+         <h3>Enter Amount:</h3>
+         <div  class="enter">
+            <input type="number" id="amount">
+         </div>
+     
+         <div class="main">
+            <div class="from">
+            <p>From</p>
+
+          <select name="" id="dropdown1">
+            <option value=""hidden>Choose here</option>
+            <option value="INR">India -INR</option>
+            <option value="USD">USA -USD</option>
+            <option value="EUR">Europe -EUR</option>
+            <option value="CNY">China -CNY</option>
+            <option value="JPY">Japan -JPY</option>
+         </select>
+         </div>
+           
+          <button id="swap">⇄</button>
+
+
+           <div class="to">
+          <p>To</p>
+          <select name="" id="dropdown2">
+             <option value=""hidden>Choose here</option>
+            <option value="INR">India -INR</option>
+            <option value="USD">USA -USD</option>
+            <option value="EUR">Europe -EUR</option>
+            <option value="CNY">China -CNY</option>
+            <option value="JPY">Japan -JPY</option>
+         </select>
+         </div>
+
+         </div>
+         
+    
+        
+            <button onclick="ShowResult()" id="convertBtn">Convert</button>
+            
+            <div id="result"></div>
+
+    </div>
+    
+    <script src="script.js"></script>
+        
+</body>
+</html>
